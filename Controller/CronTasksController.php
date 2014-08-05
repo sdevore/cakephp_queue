@@ -138,7 +138,7 @@ class CronTasksController extends QueueAppController {
  * @return void
  */
 	public function admin_add() {
-		if ($this->Common->isPosted()) {
+		if ($this->request->isPosted()) {
 			$this->CronTask->create();
 			if ($this->CronTask->save($this->request->data)) {
 				$var = $this->request->data['CronTask']['title'];
