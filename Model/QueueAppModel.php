@@ -1,6 +1,6 @@
 <?php
-App::uses('AppModel', 'Model');
 
-class QueueAppModel extends AppModel {
+App::uses('MyModel', 'Tools.Model');
+class QueueAppModel extends MyModel {
 }
 
